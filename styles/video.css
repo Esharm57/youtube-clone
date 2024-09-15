@@ -1,0 +1,136 @@
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+}
+
+.video-title {
+    margin-top: 0px;
+    font-size : 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.video-preview {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.video-info-grid {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-author, .video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96) ;
+}
+
+.video-author {
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.video-grid {
+    display: grid;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1099px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1100px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-time {
+    font-family: roboto, arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 11px;
+    right: 4px;
+}
+
+.video-info {
+    margin-left: -2px;
+}
+
+.channel-picture {
+    position: relative;
+}
+
+.profile-picture-container .channel-info {
+    font-family: roboto, arial;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    font-size: 13px;
+    top: 50px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.profile-picture-container:hover .channel-info {
+    opacity: 1;
+}
+
+.channel-details{
+    margin-left: 10px;
+}
+
+.picture {
+    width: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subscriber-count {
+    color: rgb(100, 100, 100);
+}
